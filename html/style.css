@@ -1,0 +1,48 @@
+/*
+selector
+body    {
+    //propiety   value
+    color      : red;
+}
+*/
+body {
+    font-family: 'JetBrainsMono Nerd Font Mono', 'Arial', 'sans-serif';
+    background-color: #FF746C;
+}
+
+main {
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #ff9e99;
+    border-radius: 10px;
+}
+
+main > p {
+    color: red;
+}
+
+/*
+Combinator Selectors
+
+Descendant          | div p {
+Direct Child        | div > p {
+Adjacent Sibling    | div + p {
+General Sibling     | div ~ p {
+*/
+
+/* [+] Close tag down in DOM */
+main + p {
+    color: gray;
+}
+
+/*
+| CSS
+Cascade Style Sheet
+Importancy:
+10000  | !important
+1000   | online-styles
+100    | #id
+10     | classes, attributes and pseudo classes[:hover]
+1      | elements and pseudo elements [::before]
+0      | universal selector
+*/
