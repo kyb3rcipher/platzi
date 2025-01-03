@@ -1,0 +1,3 @@
+Es un termino popularizado por Robert C martin en su libro CleanCode: 'A handbook of Agile Software Craftsmanship en el 2008'.
+
+"El código limpio es aquel que se ha escrito con la intención que otra persona lo entienda" by: Anonymous

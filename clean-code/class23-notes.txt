@@ -1,0 +1,4 @@
+La Big O notation o tambien conocida como la notación Big O es la expresión matemática de cuanto se tarda en ejecutar un algoritmo en funcion de la longitud de entrada, normalmente hablando del peor de los casos.
+
+En la practica se utiliza Big O para clasificar los algoritmos en funcion de como responden a los cambios en el tamano de la entrada, por lo que los algoritmos con la misma tasa de crecimiento se representan con la misma notacion.
+El uso de la letra O es porque la tasa de crecimiento de una funcion también se llama orden de la funcion.

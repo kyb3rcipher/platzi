@@ -1,0 +1,22 @@
+Clase 1: Deuda tecnica y refactorización de codigo
+
+"Nuestro codigo debe ser simple y directo, debería leerse con la misma facilidad que un texto bien escrito." by: Grady Booch - Entusiasta del diseno de patrones.
+
+1992 fue implementado el concepto de Deduda Tecnica por Ward Cunningham -> coautores del maniesfiesto agil
+
+La deuda técnica en si no es mala, se deja para poder liberar un producto mas agíl, con la promesa que se va pagar esa deuda
+Tipos de deuda técnica:
+    - Imprudente y deliberada -> Se da cuando el desarrollador actua de manera consciente e imprudente, ya que no toma cuenta el factor del error en el codigo.
+    - Imprudente e inadvertida -> No se sabe que se esta dejando un error ya que no se posee los conocimientos
+    - Prudente y deliberada -> Se tiene el 100% de consciencia que se esta dejando la deuda y se tiene la promesa que se va a pagar.
+    - Prudente e inadvertida -> Es la mas comun, se obtiene cuando se tiene la idea que el desarrollo es el mas eficiente pero se llega a discusión que se podia realizar ciertas mejoras
+
+¿Como pagar las deudas?
+Refactorización -> Es el proceso el cual se pagan las deudas.
+Refactorizando el codigo, esto es mejorar el codigo sin alterar su comportamiento para que sea mas entendible y tolerante a cambios.
+Y es importante que el codigo tenga tests (units o integration tests) automáticos que validen el comportamiento del codigo.
+¿Cuándo refactorizar?
+
+Cuando hay codigo de baja calidad (duplicación de codigo, funciones con mas de una acción)
+Se detecta cualquier otro tipo de code smell (codigo duplicado, métodos o clases demasiado grandes y complejos, falta de cohesion entre diferentes partes del codigo, uso excesivo de condicionales y bucles anidados, por e.g.)
+Se debe tener test de codigo para antes refactorizar.

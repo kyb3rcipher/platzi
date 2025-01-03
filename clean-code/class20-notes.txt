@@ -1,0 +1,3 @@
+"No comentes codigo mal escrito, reescribelo." by: Brian Kernighan
+
+Los comentarios buenos pueden explicar el POR QUE se escribio el codigo el POR QUE se implemento cierta cosa X[library, framework, etc].
