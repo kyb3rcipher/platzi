@@ -1,0 +1,39 @@
+{
+  "name": "backed-con-node.js-api-rest-con-express",
+  "version": "1.0.0",
+  "description": "Curso de Platzi de backed con nodejs: API rest con express",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "./node_modules/.bin/nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyb3rcipher/platzi.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "api",
+    "platzi"
+  ],
+  "author": "Kyb3r Cipher <me@kyb3rcipher.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kyb3rcipher/platzi/issues"
+  },
+  "homepage": "https://github.com/kyb3rcipher/platzi#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^9.3.0",
+    "globals": "^15.14.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2"
+  },
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "joi": "^17.13.3"
+  }
+}
