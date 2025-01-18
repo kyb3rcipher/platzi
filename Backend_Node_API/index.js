@@ -2,7 +2,6 @@ import express from 'express';
 import cors from 'cors';
 import routerApi from './routes/index.js';
 import errorMiddlewares from './middlewares/error.hanlder.js';
-import validatorMiddlewares from './middlewares/validator.handler.js';
 
 const app = express();
 const port = 3000;
@@ -25,8 +24,8 @@ app.get('/', (request, response) => {
 
 routerApi(app);
 
-app.use(validatorMiddlewares.validationHandler);
 app.use(errorMiddlewares.logErrors);
+app.use(errorMiddlewares.ormErrorHandler);
 app.use(errorMiddlewares.boomErrorHandler);
 app.use(errorMiddlewares.errorHandler);
 

@@ -1,10 +1,14 @@
 import { faker } from '@faker-js/faker';
 import boom from '@hapi/boom';
+// import pool from '../libs/postgres.pool.js';
+import sequelize from '../libs/sequelize.js';
 
 class ProductService {
     constructor() {
         this.products = [];
         this.generate(100);
+        // this.pool = pool;
+        // this.pool.on('error', (err) => { console.log(err); });
     }
 
     generate(limit) {
@@ -30,12 +34,9 @@ class ProductService {
     }
 
     async find() {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve(this.products);
-            }, 0);
-        });
-        return this.products;
+        const query = 'SELECT * FROM tasks';
+        const [ data, metadata ] = await sequelize.query(query);
+        return data;
     }
 
     async findOne(id) {

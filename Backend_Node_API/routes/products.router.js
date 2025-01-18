@@ -14,7 +14,9 @@ router.get('/:id', async (req, res, next) => {
         const id = req.params.id;
         const product = await service.findOne(id);
         res.json(product);
-    } catch(err) {
+    } catch(err) {// const limit = req.query.limit || 100;
+        const products = await service.find();
+        res.json(products);
         next(err);
         res.status(404).json({ message: err.message, stack: err.stack });
     }
